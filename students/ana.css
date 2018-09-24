@@ -1,0 +1,44 @@
+/* ---- reset ---- */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+section.profile{
+  float: left; 
+}
+/* ------ Typografphy ------*/
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* --------- Layaout -------*/
+.hidden {
+  display: none;
+}
+.container {
+  margin: 0 20px;
+
+}
+
+@media (min-width: 768px){
+  section.profile {
+    float: left;
+  }
+  section.interest {
+    float: right;
+  }
+  .container {
+    max-width: 728px;
+    margin: 0 auto;
+  }
+}
