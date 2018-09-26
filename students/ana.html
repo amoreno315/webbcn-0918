@@ -6,50 +6,73 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="ana.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
- 
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+
+
 </head>
 
 <body>
   <header class="container">
-    <div>
-      <h1 class="title">Cohort 09 2018</h1>
-      <a  class="button" href="../index.html">Ir a pagina principal</a>
 
-    </div>
-    
+    <a class="button-back" href="../index.html"><i class="rotar fas fa-sign-out-alt"></i>Volver</a>
+    <h1 class="title">Cohort 09 2018</h1>
+
+
   </header>
   <main id="site-main">
-    <div>
-      <section class="container profile">
-        <h2>Ana</h2>
-        <img class="img-avatar" src="avatar_ani.png" alt="Avatar Ani">
-        <p class="profile-info hidden">Hace 7 años deje mi trabajo y me fui a Alemania. Allí intente encontrar trabajo 
-        como informática, de lo que yo habia estado trabajando. Esto es, la parte de soporte y 
-        administración. La cosa no fue fácil, puesto que un requisito indispensable era un nivel 
-        muy alto de aleman, que por ese entonces no tenia.
-        Por ese motivo decidí formarme en programación y realice varios cursos online, pero me 
-        falto la parte aplicada. 
-        <em>Tras el Bootcamp vuelvo a Alemania</em>, donde espero, esta vez sí, empezar una carrera como 
-        <em>programadora de Frontend</em>, donde pueda poner en practica todos los conocimientos adquiridos y 
-       adquirir nuevos conocimientos que me permitan seguir avanzando.
 
+    <section class="container profile">
+      <div class="titles">
+        <h3>Ana</h3>
+        <p class="description">Web developer Barcelona, 09 2018.
+          Próximo destino, Munich!
         </p>
-      </section>
-    </div>
+      </div>
+      <div class="img-content">
+        <img class="img-avatar" src="castillo.jpg" alt="Avatar Ani">
+      </div>
+    </section>
 
-    <div>
-        <section class="container interest">
-            <h3 class="interest-list-title">Intereses</h3>
-              <ul class="interest-list">
-                <li> Viajar</li>
-                <li>Tecnologia</li>
-                 <li>Actividades de invierno</li>
-              </ul>
-          </section>
+    <section class="container about">
+      <p class="profile-info hidden">Hace 7 años deje mi trabajo y me fui a Alemania. Allí intente encontrar trabajo
+        como informática, de lo que yo habia estado trabajando. Esto es, la parte de soporte y
+        administración. La cosa no fue fácil, puesto que un requisito indispensable era un nivel
+        muy alto de aleman, que por ese entonces no tenia.
+        Por ese motivo decidí formarme en programación y realice varios cursos online, pero me
+        falto la parte aplicada.
+        <em>Tras el Bootcamp vuelvo a Alemania</em>, donde espero, esta vez sí, empezar una carrera como
+        <em>programadora de Frontend</em>, donde pueda poner en practica todos los conocimientos adquiridos y
+        adquirir nuevos conocimientos que me permitan seguir avanzando.
+
+      </p>
+    </section>
+
+    <section class="container interest">
+      <h3 class="interest-list-title">Intereses</h3>
+      <ul class="interest-list">
+        <li> Viajar</li>
+        <li>Tecnologia</li>
+        <li>Actividades de invierno</li>
+      </ul>
+    </section>
+    <section class="game">
+      <p class="button">Start</p>
+      <h3 class="counter-box">30</h3>
+    </section>
+    <div class="search">
+      <label for="name">Students</label>
+      <div class="input-student">
+        <input type="text">
+        <div class="search-results">
+
+        </div>
+      </div>
     </div>
   </main>
   <script src="./ana.js"></script>
+  <script src="../students.js"></script>
 </body>
-</html>
 
+</html>
