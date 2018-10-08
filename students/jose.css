@@ -1,0 +1,136 @@
+/* ---- reset ---- */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.container{
+  margin: 0 20px;
+  padding: 0 2%;
+}
+/* ---- typography ---- */
+body{
+  font-family: 'Roboto', sans-serif;
+}
+.hidden{      
+  display: none;  /*Esconder con js*/
+}
+/* --- HEADER --- */
+body header.top-header{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: baseline;
+  background-color: rgba(37, 36, 37,0.5);
+  margin: 0;
+  border-bottom: 1px solid black;
+}
+header ul{
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+}
+/* ---- ESTILOS PARA EL BUSCADOR --- */
+.search{
+  text-align: center;
+}
+.input-student{
+  position:relative;
+  display: inline-block;
+
+}
+.input-student .search-results{
+  position: absolute;
+  left: 0;
+  top: 22px;
+  background-color: lightgrey;
+  list-style: none;
+  text-align: center;
+  width: 100%;
+}
+.input{
+  font-size: 18px;
+  width:200px; 
+  padding: 5px;
+}
+/* ---- MAIN PRIMERA SECTION --- */
+.main{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(246, 246, 246);
+  background-image: url("https://www.viniloscasa.com/28046-thickbox/vinilos-para-mamparas-panel-geometrico.jpg");
+  background-repeat: repeat;
+  background-size: contain;
+  padding: 2% 0;
+  border-bottom: 1px solid black;
+}
+/* --- SECTION DEL JUEGO BOMBA --- */
+.section-bomba{ /*elemento padre*/
+  background-color: black;
+  width: 100%;
+  color:white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5% 0 5% 5%;
+}
+.mitad{
+  width: 50%;
+}
+.butonbomb{
+  font-size: 42px;
+  padding: 2%;
+  border-radius: 20px;
+  text-align: center;
+  color:black;
+  background-color: yellow;
+  text-transform: uppercase;
+}
+.butonbomb:hover{
+  filter: invert(180%);
+}
+.texto-bomba{
+  text-align: center;
+  padding: 0 2%
+}
+.playground{
+  width: 50%;
+  text-align: center;
+}
+.color-red{
+  color: black;
+  background-color: red;
+}
+/* --- SECTION INTERESES Y EXPERIMENTOS*/
+.section-intereses{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: baseline;
+  padding: 0 5%;
+}
+.section-intereses article{
+  width: 30%;
+}
+.head-bar{
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+}
+/* ---- repsonsives ---- */
+/* @media(min-width: 768px){
+  .container{
+    margin: 0 auto;
+    max-width: 728px;
+  }
+} */
+

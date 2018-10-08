@@ -5,24 +5,120 @@
   <title>Perfil de Eva</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="evaa.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <a href="../index.html">Index</a>
-    <h1>Cohort 09 2018</h1>
+  <header class = "page-header">
+    <a href="../index.html" class="back-menu">Volver</a>
+    <h1 class = "profile-title">Cohort 09 2018</h1>
   </header>
-  <section class="profile">
-    <h2>Eva</h2>
-    <img src="https://bit.ly/2xhxscD" width="400px" alt="Imagen de perfil">
-    <p>Me llamo <em>Eva</em>, tengo 27 años y soy de Barcelona. La música me mueve, pero me mueve mal.</p>
-    <h3>Intereses</h3>
-    <ul>
-      <li> Netflix</li>
-      <li> Viajar</li>
-      <li> Escuchar música</li>
-      <li> Beber cerveza</li>
-    </ul>
-  </section>
+  <div class="search">
+    <div class="input-student">
+      <input type="text" placeholder="Buscador de alumnos">
+      <div class="search-results"></div>
+    </div>
+  </div>
+  <main id = "site-main">
+    <section class="profile">
+      <header class="section-header">
+        <h2>Eva</h2>
+        <button class="hide-button">Hide section</button>
+      </header>
+      <div class = "to-hide-info">
+        <p>Me llamo <em>Eva</em>, tengo 27 años y soy de Barcelona. La música me mueve, pero me mueve mal.</p>
+        <img src="images/evaa2.png" class="profile-picture" alt="Imagen de perfil">
+        <h3>Intereses</h3>
+        <ul class = "list-of-interests">
+          <li>Netflix</li>
+          <li>Viajar</li>
+          <li>Escuchar música</li>
+          <li>Beber cerveza</li>
+        </ul>
+    </div>
+    </section>
+    <section class="experiments">
+      <header class="section-header">
+        <h2>Experiments</h2>
+        <button class="hide-button">Hide section</button>
+      </header>
+      <div class = "to-hide-info">
+        <div class = "cards-container">
+          <article class="card-experiment">
+            <header class="card-header">
+              <h3 class="title">JS Basic Algorithms</h3>
+            </header>
+            <div class="card-body">
+              <p><em>WIP</em></p>
+              <p>Basic practise</p>
+              <p><a href="https://github.com/evapanizo/lab-javascript-basic-algorithms" class="external">Míralo en GitHub</a></p>
+            </div>
+            <footer>
+              <p>Created in: 18/09/2018</p>
+            </footer>
+          </article>
+          <article class="card-experiment">
+            <header class="card-header">
+              <h3 class="title">JS Cluedo</h3>
+            </header>
+            <div class="card-body">
+              <p><em>WIP</em></p>
+              <p>Cluedo game.</p>
+              <p><a href="https://github.com/evapanizo/lab-javascript-clue" class="external">Míralo en GitHub</a></p>
+            </div>
+            <footer>
+              <p>Created in: 19/09/2018</p>
+            </footer>
+          </article>
+          <article class="card-experiment">
+            <header class="card-header">
+              <h3 class="title">JS All Time Movies</h3>
+            </header>
+            <div class="card-body">
+              <p><em>WIP</em></p>
+              <p>Object Practise</p>
+              <p><a href="https://github.com/evapanizo/lab-javascript-all-times-movies" class="external">Míralo en GitHub</a></p>
+            </div>
+            <footer>
+              <p>Created in: 22/09/2018</p>
+            </footer>
+          </article>
+          <article class="card-experiment">
+            <header class="card-header">
+              <h3 class="title">Slack Clone</h3>
+            </header>
+            <div class="card-body">
+              <p><em>WIP</em></p>
+              <p>HTML and CSS Practise</p>
+              <p><a href="https://github.com/evapanizo/lab-slack-clone" class="external">Míralo en GitHub</a></p>
+            </div>
+            <footer>
+              <p>Created in: 23/09/2018</p>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="games">
+      <header class="section-header">
+        <h2>Juegos</h2>
+        <button class="hide-button">Hide section</button>
+      </header>
+      <div class = "to-hide-info">
+        <article class="password-game">
+          <h3>The Password Game</h3>
+          <p>Uso contraseñas fáciles. Siempre suelen estar
+            entre las 25 más utilizadas del mundo. Intenta adivinar mi favorita.
+            Escríbela y pulsa ENTER. Si es correcta, la cuenta atrás parará.</p>
+          <button class="password-play-button">Jugar</button>
+          <div class="game-container">
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <script type="text/javascript" src="../students.js"></script>
+  <script type="text/javascript" src="evaa.js"></script>
 </body>
 </html>

@@ -1,0 +1,51 @@
+/* ---- reset ---- */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*typography*/
+
+body{
+  font-family: 'Roboto', 'sans-serif';
+}
+
+/*Tayout*/
+
+.container{
+  margin: 0 20px;
+}
+
+@media (min-width: 768px) {
+  /*falta*/
+}
+
+.container{
+  max-width: 728px;
+}
+
+#site-main{
+  overflow:hidden;
+}
+
+section.informacion-personal{
+  float: left;
+  width: 50%;
+  background: #C4C8F7;
+}
+section.experiments{
+  float: right;
+  width: 50%;
+}
+
+.oculto {
+  display: none;
+}

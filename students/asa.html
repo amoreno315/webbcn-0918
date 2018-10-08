@@ -5,26 +5,112 @@
   <title>Personal Page Åsa</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="asa.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Reenie+Beanie" rel="stylesheet">
 </head>
 
 <body>
   <header class='header'>
-    <h1>Cohort 09 2018</h1>
-    <a href='../index.html'>Return to home</a>
+    <div class="header-box">
+      <div class="title">
+        <p class="title-text">web developer</p>
+        <img class="signature" src='asa/asa3.png'>
+      </div>
+      <nav class="nav-bar">
+        <div class='search'>
+            <label for='name'></label>
+            <div class="input-student">
+              <input type="text" placeholder="student name">
+              <div class="search-results">
+    
+              </div>
+            </div>
+          </div>
+      </nav>
+    </div>
   </header>
-  <section class='profile'>
-    <h2>Åsa Eriksson</h2>
-    <img src='asa.jpg' width='400px'>
-    <p>Hi,</p>
-    <p>I'm a swedish girl that loves <em>traveling</em> around the <strong>world</strong>. In my sparetime I like to <em>read books</em> and <em>play the piano</em> to clear my mind. My family and friends are really important to me. When I feel really frustrated and need a break, I desperately <em>watch Netflix</em>.</p>
-    <h3>My interests</h3>
-    <ul class='list'>
-      <li>Travel</li>
-      <li>Read books</li>
-      <li>Play the piano</li>
-      <li>Hang out with family and friends</li>
-      <li>Watch Netflix</li>
-    </ul>
-  </section>
+  <main>
+
+    <section class='profile'>
+      <div class="width-box">
+        <div class="cohort">
+            <h1 class="white-text">Cohort 09 2018</h1>
+            <h2 class="white-text">by Åsa Eriksson</h2>
+            <button class="dont-push-button button">Feel like getting lost?</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="about container">
+      <h3>Let me tell you</h3>
+      <h1>About me</h1>
+      <div class="text-about">
+        <div class="my-background my-container">
+          <h4>My background</h4>
+          <p>I'm a swedish girl that loves <em>traveling</em> around the <strong>world</strong>. In my sparetime I like to <em>read books</em> and <em>play the piano</em> to clear my mind. My family and friends are really important to me. When I feel really frustrated and need a break, I desperately <em>watch Netflix</em>.</p>
+        </div>
+        <div class="my-interests my-container">
+          <h4>My interests</h4>
+          <ul class='list'>
+            <li>Travel</li>
+            <li>Read books</li>
+            <li>Play the piano</li>
+            <li>Hang out with family and friends</li>
+            <li>Watch Netflix</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="experiments container">
+      <h3>Take a look at my</h3>
+      <h1>Experiments</h1>
+
+      <div class="articles">
+        <article class="card experiment">
+          <header class="card-header">
+            <h4 class="title">First experiment</h4>
+          </header>
+
+          <div class="card-body">
+              <p><em>WIP</em></p>
+              <p>JS Basic</p>
+              <p><a href="#" class="external">See in Github</a></p>
+              <p>Created in: xx/xx/xxxx</p>
+          </div>
+        </article>
+
+        <article class="card experiment">
+          <header class="card-header">
+            <h4 class="title">Second experiment</h4>
+          </header>
+
+          <div class="card-body">
+              <p><em>WIP</em></p>
+              <p>JS Basic</p>
+              <p><a href="#" class="external">See in Github</a></p>
+              <p>Created in: xx/xx/xxxx</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div class="link-section">
+        <a class="return-to-home" href='../index.html'>Return to home</a>
+    </div>
+  </main>
+  
+  <div class="get-back-window hidden">
+    <h3 class="get-back-text hidden">Only loosers leave my page!</h3>
+    <button class="push-button button hidden">Get back!</button>
+  </div>
+
+  <footer class="footer">
+      <p class="white-text">Follow me</p>
+  </footer>
+
+  <script src="../students.js"></script>
+  <script type="text/javascript" src="asa.js";></script>
 </body>
 </html>

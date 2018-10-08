@@ -1,0 +1,281 @@
+/* --------------- Reset -------------------- */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+/* --------------- Typography --------------- */
+
+body{
+  font-family: 'Noto Serif JP', sans-serif;
+  font-size: 16px;
+  background-image: url("images/evaa.jpg");
+}
+
+h2 {
+  color:#2B4FAA;
+  font-weight: 900;
+}
+
+h3 {
+  color:#2B4FAA;
+  font-weight: 900;
+}
+
+p, li {
+  color: rgb(90, 90, 90);
+  text-align: justify;
+}
+
+/* --------------- Layout --------------- */
+
+/* Structure */
+
+.hidden{
+  display: none;
+}
+
+.section-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hide-button{
+  height: 2%;
+}
+
+.external{
+  text-decoration: none;
+  color: #2B4FAA;
+}
+
+.external:hover{
+  color: #EC4865;
+}
+
+/* Header */
+
+header.page-header {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+  background-color: rgb(246, 255, 255);;
+  color:#2B4FAA;
+  border-bottom: solid 1px #2B4FAA;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+a.back-menu {
+  text-decoration: none;
+  border-radius: 5%;
+  color:  #2B4FAA;
+  margin: 2% 5% 2% 0%;
+}
+
+
+a.back-menu:hover {
+color: #EC4865;
+}
+
+
+h1.profile-title{
+  font-size: 1em;
+  font-weight: 900;
+  color: #2B4FAA;
+  align-self: center;
+  margin: 2% 0% 2% 5%
+}
+
+/* Search */
+.search{
+  margin-top: 15%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 2%;
+  text-align: center;
+  border: 1px solid #2B4FAA;
+  background-color: rgb(86, 215, 247, 0.6);
+}
+
+.input-student input{
+  border: 1px solid rgb(196, 196, 196);
+  border-radius: 8%;
+  padding: 1%;
+  margin: 2% 30%;
+}
+
+.input-student ul{
+  padding: 0;
+  margin: 0% 30%;
+  padding-bottom: 0.5%;
+}
+
+.input-student ul li{
+  list-style-type: none;
+  text-align: center;
+}
+
+.input-student ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+
+/* Main */
+
+main {
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-bottom: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Section Profile */
+
+.profile-picture{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.animation-picture{
+  animation: rotation 4s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(359deg);
+  }
+}
+
+.profile{
+  width: 100%;
+  padding: 2%;
+  border: 1px solid #2B4FAA;
+  border-radius: 2%;
+  background-color: rgb(246, 255, 255, 0.7);
+}
+
+/* Section Experiments */
+
+.experiments{
+  width: 100%;
+  padding: 2%;
+  margin-top: 10%;
+  border: 1px solid #2B4FAA;
+  background-color: rgb(246, 255, 255, 0.7);
+  border-radius: 2%;
+}
+
+/* Section Games */
+.games{
+  width: 100%;
+  margin-top: 10%;
+  padding: 2%;
+  border: 1px solid #2B4FAA;
+  background-color: rgb(246, 255, 255, 0.7);
+  border-radius: 2%;
+}
+
+.password-play-button{
+  padding: 0.2% 3%;
+}
+
+.game-container{
+  text-align: center;
+}
+
+.game-container input{
+  border: 1px solid #2B4FAA;
+  border-radius: 8%;
+  padding: 1%;
+  margin: 2% 30%;
+}
+
+.game-container p{
+  font-size: 1.2em;
+  padding: 1% 2%;
+  width: 20%;
+  background-color: white;
+  border: 1px solid #2B4FAA;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.timeup {
+  color: red;
+}
+
+.win{
+  color: rgb(92, 224, 92);
+}
+
+
+/* Media Querys */
+@media (min-width: 768px) {
+  .profile {
+    width: 45%;
+  }
+
+  .experiments {
+    width: 45%;
+    margin-top: 0%;
+  }
+
+ .main {
+   justify-content: space-around;
+ }
+
+ .search{
+  margin-top: 10%;
+}
+
+.games{
+  margin-top: 5%;
+}
+
+}
+
+@media (min-width: 1024px) {
+  .cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .card-experiment{
+    width: 50%;
+  }
+
+  .main{
+    padding: 0%;
+  }
+
+}

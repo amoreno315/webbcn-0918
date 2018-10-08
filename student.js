@@ -10,7 +10,7 @@ var students = [{
 },
 {
   url: 'students/asa.html',
-  name: 'Åsa'
+  name: 'Asa'
 },
 {
   url: 'students/cesar.html',
@@ -63,4 +63,4 @@ var students = [{
 {
   url: 'students/raul.html',
   name: 'Raul'
-}];
+}]

@@ -5,14 +5,19 @@
   <title>Portafolio Ester</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="ester.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito|Roboto" rel="stylesheet">
 </head>
 
+
 <body>
-  <header>
+  <header class="container">
     <a href="../index.html">Volver</a>
     <h1>Cohort 09 2018</h1>
   </header>
-  <section class="informacion-personal">
+  
+  <main id="site-main">
+  <section class="informacion-personal container">
     <h2>Ester Díaz</h2>
     <img src="Ester.jpg"
       alt="Ester en el parque"
@@ -26,6 +31,33 @@
       <li>Gastronomía</li>
       <li>Montaña</li>
     </ul>
-  </section>
+     </section>
+     <button class="toggle-info">Clik me to hide section 1</button>
+     <button class="toggle-experiments">Clik me to hide section 2</button>
+
+  <section class="experiments container">
+      <section class="experiments"></section>
+      <h2>Experimentos</h2>
+      <article class="card experiment">
+        <header class="card-header">
+          <h3 class="title">My first experiment</h3>
+        </header>
+      
+      <div class="card-body">
+        <p><em>WIP</em></p>
+        <p>JS Basic</p>
+        <p><a href="" class="external">Miralo en Github</a></p>
+      </div>
+
+      <footer>
+        <p>Created in: xx/xx/xxxx</p>
+      </footer>
+    </article>
+
+   </section>
+  </main>
+  <script src="ester.js"></script>
 </body>
 </html>
+
+
